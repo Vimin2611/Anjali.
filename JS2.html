@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<body>
+   <p id="buddy"></p> 
+   <p id="mate"></p>
+   <script>
+    class student{
+        constructor(name,year){
+            this.name = name;
+            this.year = year;
+        }
+        age(){
+            let date = new Date ();
+          return date.getFullYear()-this.year;
+        }
+    }
+    buddy = new student ("Lala the pengiun",2020);
+    document.getElementById("buddy").innerHTML=
+    "My name is " + buddy.name + "My birth year is" + buddy.year + "My age is " + buddy.age();
+    mate = new student ("Oggy the coconut",2024);
+    document.getElementById("mate").innerHTML=
+    "My name is " + mate.name + "My birth year is" + mate.year + "My age is " + mate.age();
+   </script>
+</body>
+</html>
